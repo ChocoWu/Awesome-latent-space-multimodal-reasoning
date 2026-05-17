@@ -8,8 +8,6 @@
 
 Scope: 2024–2026, with selected seminal precursors. Entry format: **Title** [arXiv:ID] — one-sentence summary. 
 
-> ⚠️ **Note on arXiv IDs.** IDs were collected via live web search where possible; a small number of older entries are recalled from training data and marked `[arXiv:?]` when not independently verifiable. Please open an issue if you spot any ID that is wrong.
-
 ---
 
 ## Table of Contents
