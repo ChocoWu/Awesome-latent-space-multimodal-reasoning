@@ -1,5 +1,9 @@
 # Awesome Latent-Space Multimodal Reasoning [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
+<p align="center">
+  <img src="assets/teaser.svg" width="880" alt="Latent-Space Multimodal Reasoning: an iceberg metaphor. The small visible tip is the emitted text answer; beneath the surface, five layered reasoning substrates — continuous thoughts, discrete concept codes, visual latent tokens, looped/recurrent-depth computation, and world models / latent actions — do the real work."/>
+</p>
+
 > A curated list of papers on **reasoning in latent / continuous / discrete-concept space**, with a strong focus on the **multimodal** setting (vision, video, audio, action). The line that connects everything here: *reasoning is not done by emitting more text tokens, but by iterating, refining, or expanding **internal representations** — hidden states, continuous thoughts, discrete concept codes, latent visual tokens, learned actions, or world-model rollouts.*
 
 Scope: 2024–2026, with selected seminal precursors. Entry format: **Title** [arXiv:ID] — one-sentence summary. 

@@ -1,0 +1,188 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" role="img" aria-label="Latent-Space Multimodal Reasoning teaser figure: iceberg metaphor">
+
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFF8EC"/>
+      <stop offset="100%" stop-color="#FCEFDC"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#E2EEF5"/>
+      <stop offset="55%" stop-color="#A6C6D8"/>
+      <stop offset="100%" stop-color="#688FA7"/>
+    </linearGradient>
+    <linearGradient id="iceTip" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3F7FA"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="off"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.18"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="1200" height="210" fill="url(#sky)"/>
+  <!-- Water -->
+  <rect x="0" y="210" width="1200" height="590" fill="url(#water)"/>
+
+  <!-- Sun dot (subtle) -->
+  <circle cx="1060" cy="70" r="34" fill="#FFE6B8" opacity="0.55"/>
+  <circle cx="1060" cy="70" r="22" fill="#FFD89A" opacity="0.7"/>
+
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="32" font-weight="700" fill="#37475A" letter-spacing="0.5">
+    Latent-Space Multimodal Reasoning
+  </text>
+  <text x="600" y="78" text-anchor="middle" font-size="15" fill="#6E8090" font-style="italic">
+    What you read is the tip — reasoning happens beneath the surface.
+  </text>
+
+  <!-- Visible token chain (left of tip) -->
+  <g transform="translate(170, 158)">
+    <text x="0" y="0" font-size="12" fill="#8E6A56" font-weight="600" letter-spacing="0.8">VISIBLE TOKENS</text>
+    <g transform="translate(0, 18)">
+      <rect x="0"   y="0" width="44" height="20" rx="10" fill="#F7CBD3" opacity="0.85"/>
+      <rect x="50"  y="0" width="44" height="20" rx="10" fill="#F7CBD3" opacity="0.85"/>
+      <rect x="100" y="0" width="44" height="20" rx="10" fill="#F7CBD3" opacity="0.85"/>
+      <rect x="150" y="0" width="44" height="20" rx="10" fill="#F7CBD3" opacity="0.85"/>
+      <text x="22"  y="14" text-anchor="middle" font-size="10" fill="#7A3548">Let</text>
+      <text x="72"  y="14" text-anchor="middle" font-size="10" fill="#7A3548">me</text>
+      <text x="122" y="14" text-anchor="middle" font-size="10" fill="#7A3548">think</text>
+      <text x="172" y="14" text-anchor="middle" font-size="10" fill="#7A3548">…</text>
+      <path d="M196,10 L218,10" stroke="#94A4B4" stroke-width="1.4" marker-end="url(#arr)"/>
+    </g>
+  </g>
+
+  <!-- Speech bubble: final answer -->
+  <g transform="translate(800, 130)" filter="url(#softShadow)">
+    <rect x="0" y="0" width="246" height="50" rx="25" ry="25" fill="#FFFFFF" stroke="#D6C5E1" stroke-width="1.6"/>
+    <text x="123" y="32" text-anchor="middle" font-size="15" fill="#37475A" font-style="italic">"The answer is 42."</text>
+    <path d="M30,46 L18,72 L48,52 Z" fill="#FFFFFF" stroke="#D6C5E1" stroke-width="1.6"/>
+  </g>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#94A4B4"/>
+    </marker>
+  </defs>
+
+  <!-- Waterline wave -->
+  <path d="M0,210 Q150,202 300,210 T600,210 T900,210 T1200,210 L1200,220 L0,220 Z" fill="#C8DCE6" opacity="0.55"/>
+  <path d="M0,213 Q200,207 400,213 T800,213 T1200,213" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- ICEBERG TIP (above water) -->
+  <path d="M600,140 L565,210 L635,210 Z" fill="url(#iceTip)" stroke="#B8C8D4" stroke-width="1.5" filter="url(#softShadow)"/>
+  <!-- subtle highlight on tip -->
+  <path d="M600,148 L582,200" stroke="#FFFFFF" stroke-width="2" opacity="0.9"/>
+
+  <!-- ICEBERG BODY OUTLINE -->
+  <path d="
+    M565,215
+    L460,265
+    L320,355
+    L295,485
+    L375,615
+    L490,710
+    L710,710
+    L825,615
+    L905,485
+    L880,355
+    L740,265
+    L635,215
+    Z"
+    fill="#FFFFFF" fill-opacity="0.95" stroke="#B8C8D4" stroke-width="1.6" filter="url(#softShadow)"/>
+
+  <!-- ===== LAYER 1: Continuous Thoughts ===== -->
+  <path d="M565,215 L460,265 L378,310 L822,310 L740,265 L635,215 Z" fill="#FFE0EA" fill-opacity="0.96"/>
+  <text x="600" y="262" text-anchor="middle" font-size="17" font-weight="700" fill="#9D3B58" letter-spacing="0.4">
+    Continuous Thoughts
+  </text>
+  <text x="600" y="285" text-anchor="middle" font-size="12.5" fill="#A85572" font-style="italic">
+    Coconut · SoftCoT · CCoT · Soft Thinking · CODI
+  </text>
+
+  <!-- ===== LAYER 2: Discrete Concept Codes ===== -->
+  <path d="M378,310 L320,355 L308,415 L892,415 L880,355 L822,310 Z" fill="#FFE6CF" fill-opacity="0.96"/>
+  <text x="600" y="362" text-anchor="middle" font-size="17" font-weight="700" fill="#9F5E2A" letter-spacing="0.4">
+    Discrete Concept Codes
+  </text>
+  <text x="600" y="385" text-anchor="middle" font-size="12.5" fill="#B57442" font-style="italic">
+    LCM · Next-Concept Prediction · BLT · LLaDA · DCoLT
+  </text>
+
+  <!-- ===== LAYER 3: Visual Latent Tokens (widest) ===== -->
+  <path d="M308,415 L295,485 L313,520 L887,520 L905,485 L892,415 Z" fill="#DDEFD2" fill-opacity="0.96"/>
+  <text x="600" y="463" text-anchor="middle" font-size="17" font-weight="700" fill="#3F6C2A" letter-spacing="0.4">
+    Visual Latent Tokens
+  </text>
+  <text x="600" y="486" text-anchor="middle" font-size="12.5" fill="#557F40" font-style="italic">
+    Mirage · Latent Visual Reasoning · Heima · Latent Sketchpad · DMLR
+  </text>
+
+  <!-- ===== LAYER 4: Looped / Recurrent-Depth ===== -->
+  <path d="M313,520 L375,615 L825,615 L887,520 Z" fill="#E7DBEF" fill-opacity="0.96"/>
+  <text x="600" y="563" text-anchor="middle" font-size="17" font-weight="700" fill="#583576" letter-spacing="0.4">
+    Looped / Recurrent-Depth
+  </text>
+  <text x="600" y="586" text-anchor="middle" font-size="12.5" fill="#765193" font-style="italic">
+    Huginn · Universal Transformer · CoTFormer · AlgoFormer
+  </text>
+
+  <!-- looping icon, layer 4 -->
+  <g transform="translate(415, 558)" opacity="0.75">
+    <circle cx="0" cy="0" r="13" fill="none" stroke="#765193" stroke-width="1.8"/>
+    <path d="M-9,-1 L-9,-7 L-3,-7" fill="none" stroke="#765193" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M9,1 L9,7 L3,7" fill="none" stroke="#765193" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(785, 558)" opacity="0.75">
+    <circle cx="0" cy="0" r="13" fill="none" stroke="#765193" stroke-width="1.8"/>
+    <path d="M-9,-1 L-9,-7 L-3,-7" fill="none" stroke="#765193" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M9,1 L9,7 L3,7" fill="none" stroke="#765193" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- ===== LAYER 5: World Models / Latent Actions ===== -->
+  <path d="M375,615 L490,710 L710,710 L825,615 Z" fill="#D2E4EE" fill-opacity="0.96"/>
+  <text x="600" y="665" text-anchor="middle" font-size="17" font-weight="700" fill="#2A5A75" letter-spacing="0.4">
+    World Models · Latent Actions
+  </text>
+  <text x="600" y="688" text-anchor="middle" font-size="12.5" fill="#447B96" font-style="italic">
+    V-JEPA 2 · Genie · LAPA · GR-2 · DreamerV3
+  </text>
+
+  <!-- Subtle highlights along the iceberg's left ridge -->
+  <path d="M565,215 L460,265 L320,355 L295,485" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.55"/>
+
+  <!-- Bottom multimodality strip -->
+  <g transform="translate(0, 745)">
+    <text x="600" y="0" text-anchor="middle" font-size="11" fill="#A0B3C2" font-weight="600" letter-spacing="2.5">
+      MODALITIES SUPPORTED ACROSS THE STACK
+    </text>
+    <g transform="translate(420, 14)">
+      <rect x="0"   y="0" width="58" height="22" rx="11" fill="#F4B6C2" opacity="0.92"/>
+      <rect x="68"  y="0" width="58" height="22" rx="11" fill="#FFD9B7" opacity="0.92"/>
+      <rect x="136" y="0" width="58" height="22" rx="11" fill="#C7E5C0" opacity="0.92"/>
+      <rect x="204" y="0" width="58" height="22" rx="11" fill="#D6C5E1" opacity="0.92"/>
+      <rect x="272" y="0" width="58" height="22" rx="11" fill="#B8D5E8" opacity="0.92"/>
+      <text x="29"  y="15" text-anchor="middle" font-size="11" font-weight="700" fill="#5C2837">text</text>
+      <text x="97"  y="15" text-anchor="middle" font-size="11" font-weight="700" fill="#5C3C1F">image</text>
+      <text x="165" y="15" text-anchor="middle" font-size="11" font-weight="700" fill="#2E4B26">video</text>
+      <text x="233" y="15" text-anchor="middle" font-size="11" font-weight="700" fill="#3D2A4C">audio</text>
+      <text x="301" y="15" text-anchor="middle" font-size="11" font-weight="700" fill="#23445A">action</text>
+    </g>
+  </g>
+
+  <!-- Subtle bubbles in water -->
+  <g fill="#FFFFFF" opacity="0.35">
+    <circle cx="110" cy="380" r="3"/>
+    <circle cx="135" cy="345" r="2"/>
+    <circle cx="98"  cy="320" r="2"/>
+    <circle cx="1050" cy="430" r="3"/>
+    <circle cx="1080" cy="395" r="2"/>
+    <circle cx="1060" cy="365" r="2"/>
+    <circle cx="200" cy="650" r="2.5"/>
+    <circle cx="1000" cy="640" r="2.5"/>
+  </g>
+
+</svg>
